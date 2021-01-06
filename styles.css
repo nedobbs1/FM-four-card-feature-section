@@ -1,0 +1,162 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(0, 0%, 98%);
+}
+
+p {
+    color: hsl(229, 6%, 66%);
+    font-size: 1rem;
+}
+
+h1,
+h2 {
+    color: hsl(234, 12%, 34%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    width: 100%;
+    height: 2rem;
+    padding: 1% 0;
+    margin: 0;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.heading {
+    text-align: center;
+    padding: 2%;
+    width: 33%;
+    margin: 0 auto;
+}
+
+.heading h1 {
+    font-size: 2.25rem;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.unbold {
+    font-weight: 200;
+    display: block;
+}
+
+.content-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    padding: 30px;
+    width: 310px;
+    height: 200px;
+    position: relative;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 13px 20px 0px rgba(23, 88, 163, 0.25);
+    box-shadow: 0px 13px 20px 0px rgba(23, 88, 163, 0.25);
+}
+
+.card p {
+    width: 95%;
+    font-size: .9rem;
+    margin: 0;
+    padding: 0;
+}
+
+.card h2 {
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+.card img {
+    position: absolute;
+    bottom: 8%;
+    right: 8%;
+}
+
+.first {
+    background: linear-gradient(hsl(180, 62%, 55%), hsl(180, 62%, 55%)), white;
+    background-size: 100% 2%, cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.second {
+    background: linear-gradient(hsl(0, 78%, 62%), hsl(0, 78%, 62%)), white;
+    background-size: 100% 2%, cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+}
+
+.third {
+    background: linear-gradient(hsl(34, 97%, 64%), hsl(34, 97%, 64%)), white;
+    background-size: 100% 2%, cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.fourth {
+    background: linear-gradient(hsl(212, 86%, 64%), hsl(212, 86%, 64%)), white;
+    background-size: 100% 2%, cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.left-column {
+    margin-right: 30px;
+}
+
+.right-column {
+    margin-left: 30px;
+}
+
+@media only screen and (max-width: 1439px) {
+    .content-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 5%;
+        min-width: fit-content;
+    }
+
+    .left-column {
+        margin-right: 0px;
+    }
+
+    .right-column {
+        margin-left: 0px;
+    }
+
+    .second {
+        margin-bottom: 10%;
+    }
+
+    .heading {
+        width: 100%;
+        margin-bottom: 20%;
+        padding: 0;
+    }
+
+    .heading h1 {
+        padding-top: 20%;
+        padding-bottom: 5%;
+        font-size: 1.6rem;
+    }
+
+    .heading p {
+        font-size: 1rem;
+        width: 85%;
+        margin: 0 auto;
+    }
+}
